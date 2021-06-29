@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<title>Atividade2</title>
+    <script>
+
+        function iniciarjogo (){
+
+           var nivel = document.getElementById('nivel').value
+
+           window.location.href = 'jogo.html?' + nivel
+        }
+
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+
+<body>
+
+
+   <div class="h-100 container">
+    <div class="h-100 row align-items-center">
+        <div class="col" style="text-align: center;">
+          <img src="img/game.png">
+          <br>
+            <div class="col" style="text-align: center;">
+                <select class=" d-inline-flex form-control" id = 'nivel' style="text-align:center; width: 150px;">
+                    <option value='Normal'>Normal</option>
+                    <option value='Dificil'>Dificil</option>
+                    <option value='Brabo'>Brabo</option>
+                </select>
+                <br>
+                 <button class="btn btn-danger btn-lg mt-4" style="width: 150px;" onclick=" iniciarjogo()">Jogar</button>
+            </div>
+           </div>
+        </div> 
+    </div>
+
+
+
+   
+<script>
+</script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
